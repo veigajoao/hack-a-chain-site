@@ -107,28 +107,28 @@
 
         <div class="row">
           <div class="col" data-aos="zoom-in">
-            <form>
+            <form action="https://formspree.io/f/xqknbdrq" method="POST">
               <h2 class="mb-3">Request an audit</h2>
               <div class="mb-3 row">
                 <div class="col">
-                  <input type="email" class="form-control" placeholder="Email address" aria-label="Email address">
+                  <input type="email" name="email" class="form-control" placeholder="Email address" aria-label="Email address">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Telegram" aria-label="Telegram">
+                  <input type="text" name="telegram" class="form-control" placeholder="Telegram" aria-label="Telegram">
                 </div>
               </div>
     
               <div class="mb-3 row">
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Source code/github" aria-label="Source code/github">
+                  <input type="text" name="source code" class="form-control" placeholder="Source code/github" aria-label="Source code/github">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" placeholder="Website (optional)" aria-label="Website (optional)">
+                  <input type="text" name="website" class="form-control" placeholder="Website (optional)" aria-label="Website (optional)">
                 </div>
               </div>
     
               <div class="mb-3">
-                <textarea class="form-control" placeholder="Project description (optional)" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" name="description" placeholder="Project description (optional)" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
     
               <div class="mb-3">
@@ -136,16 +136,20 @@
               </div>
               <div class="mb-3 row">
                 <div class="col">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Smart contract security audit</label>
+                  <input type="checkbox" name="SCaudit" class="form-check-input" id="auditCheck">
+                  <label class="form-check-label" for="auditCheck">Smart contract security audit</label>
                 </div>
                 <div class="col">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                  <label class="form-check-label" for="exampleCheck2">KYC verification</label>
+                  <input type="checkbox" name="KYC" class="form-check-input" id="kycCheck">
+                  <label class="form-check-label" for="kycCheck">KYC verification</label>
                 </div>
                 <div class="col">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck3">
-                  <label class="form-check-label" for="exampleCheck3">Consulting</label>
+                  <input type="checkbox" name="development" class="form-check-input" id="developmentCheck">
+                  <label class="form-check-label" for="developmentCheck">Blockchain development</label>
+                </div>
+                <div class="col">
+                  <input type="checkbox" name="consulting" class="form-check-input" id="consultingCheck">
+                  <label class="form-check-label" for="consultingCheck">Security consulting</label>
                 </div>
               </div>
 
@@ -294,7 +298,7 @@
             <div class="box" data-aos="zoom-in" data-aos-delay="300">
               <span class="advanced">Advanced</span>
               <h3>Security consulting</h3>
-              <h4><sup>$</sup>10.000+<span></span></h4>
+              <h4><sup>$</sup>10,000+<span></span></h4>
               <ul>
                 <li>Full team of security engineers allocated to your project</li>
                 <li>Meant for bigger projects</li>
