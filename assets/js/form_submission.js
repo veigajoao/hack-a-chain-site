@@ -5,7 +5,13 @@ $("#quote-form").on("submit", function(event) {
         method: "POST",
         data: message,
         dataType: "json"
-    });
-    window.alert("We've received your message, we'll be in touch soon!");
+    })
+    .done(
+        () => {window.location.replace("thank_you.html")}
+    )
+    .fail(
+        () => {window.alert("There was a problem with your request, please contact us on telegram")}
+    );
+
     event.preventDefault();
 });
